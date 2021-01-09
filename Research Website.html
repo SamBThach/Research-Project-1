@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+	</head>
+	<body>
+		<?php include("Research Website.html");?>
+		<h1>Major Selection Web-Based Game</h1>
+
+		<table>
+			<tr>
+				<td>
+					<img src="Waterfall.jpg" height="480px" width="720px" alt="Image of Waterfall">
+					<br>
+					<select name="waterfall" id="waterfall">
+						<option value="waterfall">Waterfall</option>
+						<option value="mountain">Mountain</option>
+						<option value="apples">Apples</option>
+						<option value="space">Space</option>
+						<option value="turbines">Turbines</option>
+						<option value="water drop">Water Drop</option>
+					</select>
+				</td>
+				<td>
+					<img src="Apples.jpg" height="480px" width="720px" alt="Image of Green Apples">
+					<br> 
+						<select name="apples" id="apples">
+						<option value="waterfall">Waterfall</option>
+						<option value="mountain">Mountain</option>
+						<option value="apples">Apples</option>
+						<option value="space">Space</option>
+						<option value="turbines">Turbines</option>
+						<option value="water drop">Water Drop</option>
+					</select>
+				</td>
+				<td>
+					<img src="Space.jpg" height="480px" width="720px" alt="Image of Space">
+					<br> 				
+					<select name="space" id="space">
+						<option value="waterfall">Waterfall</option>
+						<option value="mountain">Mountain</option>
+						<option value="apples">Apples</option>
+						<option value="space">Space</option>
+						<option value="turbines">Turbines</option>
+						<option value="water drop">Water Drop</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="Turbines.jpg" height="480px" width="720px" alt="Image of Field With Wind Turbines">
+					<br> 				
+					<select name="turbine" id="turbine">
+						<option value="waterfall">Waterfall</option>
+						<option value="mountain">Mountain</option>
+						<option value="apples">Apples</option>
+						<option value="space">Space</option>
+						<option value="turbines">Turbines</option>
+						<option value="water drop">Water Drop</option>
+					</select>
+				</td>
+				<td>
+					<img src="WaterDrop.jpg" height="480px" width="720px" alt="Image of a Water Drop">
+					<br> 				
+					<select name="waterdrop" id="waterdrop">
+						<option value="waterfall">Waterfall</option>
+						<option value="mountain">Mountain</option>
+						<option value="apples">Apples</option>
+						<option value="space">Space</option>
+						<option value="turbines">Turbines</option>
+						<option value="water drop">Water Drop</option>
+					</select>
+				</td>
+				<td>
+					<img src="Mountain.jpg" height="480px" width="720px" alt="Image of a Mountain">
+					<br> 				
+					<select name="mountain" id="mountain">
+						<option value="waterfall">Waterfall</option>
+						<option value="mountain">Mountain</option>
+						<option value="apples">Apples</option>
+						<option value="space">Space</option>
+						<option value="turbines">Turbines</option>
+						<option value="water drop">Water Drop</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<p id="result0"></p>
+		<p id="time stamp"></p>
+		<p id="test"></p>
+		<button id="submitButton" onclick="getText()">submit</button>
+		<script> 
+			
+			var wf0 = document.getElementById("waterfall");
+            var wfResult0 = wf0.options[wf0.selectedIndex].text;
+				
+			var wf1 = document.getElementById("apples");
+            var wfResult1 = wf1.options[wf1.selectedIndex].text;
+				
+			var wf2 = document.getElementById("space");
+            var wfResult2 = wf2.options[wf2.selectedIndex].text;
+				
+			var wf3 = document.getElementById("turbine");
+            var wfResult3 = wf3.options[wf3.selectedIndex].text;
+				
+			var wf4 = document.getElementById("waterdrop");
+            var wfResult4 = wf4.options[wf4.selectedIndex].text;
+				
+			var wf5 = document.getElementById("mountain");
+            var wfResult5 = wf5.options[wf5.selectedIndex].text;
+			
+			var myButton = document.getElementById("submitButton");
+			if(wfResult0 != wfResult1 || wfResult0 != wfResult2 || wfResult0 != wfResult3 || wfResult0 != wfResult4 || wfResult0 != wfResult5
+				|| wfResult1 != wfResult2 ||wfResult1 != wfResult3 || wfResult1 != wfResult4 || wfResult1 != wfResult5 || wfResult2 != wfResult3
+				||wfResult2 != wfResult4 || wfResult2 != wfResult5 || wfResult3 != wfResult4 || wfResult3 != wfResult5 || wfResult4 != wfResult5){
+
+					myButton.addEventListener('click', doStuff, false)
+					function doStuff() {
+						myButton.textContent = "submitted";
+					}	
+			}
+
+		</script>
+
+		<script>
+            function getText(){
+                var wf0 = document.getElementById("waterfall");
+                var wfResult0 = wf0.options[wf0.selectedIndex].text;
+				
+				var wf1 = document.getElementById("apples");
+                var wfResult1 = wf1.options[wf1.selectedIndex].text;
+				
+				var wf2 = document.getElementById("space");
+                var wfResult2 = wf2.options[wf2.selectedIndex].text;
+				
+				var wf3 = document.getElementById("turbine");
+                var wfResult3 = wf3.options[wf3.selectedIndex].text;
+				
+				var wf4 = document.getElementById("waterdrop");
+                var wfResult4 = wf4.options[wf4.selectedIndex].text;
+				
+				var wf5 = document.getElementById("mountain");
+                var wfResult5 = wf5.options[wf5.selectedIndex].text;
+				
+				var beginning0 = "Your answers: ";
+				var beginning1 = "Submitted at: ";
+				var timeStamp = new Date();
+				
+				var space = ", ";
+				var finalResult = beginning0.concat(wfResult0, space, wfResult1, space, wfResult2, space, wfResult3, space, wfResult4, space, wfResult5);
+				var FinalTime = beginning1.concat(timeStamp);
+				
+				if(wfResult0 == wfResult1 || wfResult0 == wfResult2 || wfResult0 == wfResult3 || wfResult0 == wfResult4 || wfResult0 == wfResult5
+					|| wfResult1 == wfResult2 ||wfResult1 == wfResult3 || wfResult1 == wfResult4 || wfResult1 == wfResult5 || wfResult2 == wfResult3
+					||wfResult2 == wfResult4 || wfResult2 == wfResult5 || wfResult3 == wfResult4 || wfResult3 == wfResult5 || wfResult4 == wfResult5){
+					document.getElementById("test").innerHTML = "Duplicate answers, please refresh and try again";
+				}
+				else{
+					document.getElementById("result0").innerHTML = finalResult;
+					document.getElementById("time stamp").innerHTML = FinalTime;
+				}
+            }
+            
+        </script>
+		
+	</body>
+	
+</html>
