@@ -2,11 +2,12 @@
 <html lang="en">
 
 	<head>
-
+		<title> Major Selection Game </title>
 	</head>
 	<body>
 		<?php include("Research Website.html");?>
-		<h1>Major Selection Web-Based Game</h1>
+		<h1>OIT CSET Major Selection Game</h1>
+		<h2>Please match the below images with what you believe is the best answer. Your answers will be logged anonymously.</h2>
 
 		<table>
 			<tr>
@@ -14,6 +15,7 @@
 					<img src="Waterfall.jpg" height="480px" width="720px" alt="Image of Waterfall">
 					<br>
 					<select name="waterfall" id="waterfall">
+						<option value="unselected">Select</option>
 						<option value="waterfall">Waterfall</option>
 						<option value="mountain">Mountain</option>
 						<option value="apples">Apples</option>
@@ -24,8 +26,9 @@
 				</td>
 				<td>
 					<img src="Apples.jpg" height="480px" width="720px" alt="Image of Green Apples">
-					<br> 
-						<select name="apples" id="apples">
+					<br>
+					<select name="apples" id="apples">
+						<option value="unselected">Select</option>
 						<option value="waterfall">Waterfall</option>
 						<option value="mountain">Mountain</option>
 						<option value="apples">Apples</option>
@@ -38,6 +41,7 @@
 					<img src="Space.jpg" height="480px" width="720px" alt="Image of Space">
 					<br> 				
 					<select name="space" id="space">
+						<option value="unselected">Select</option>
 						<option value="waterfall">Waterfall</option>
 						<option value="mountain">Mountain</option>
 						<option value="apples">Apples</option>
@@ -52,6 +56,7 @@
 					<img src="Turbines.jpg" height="480px" width="720px" alt="Image of Field With Wind Turbines">
 					<br> 				
 					<select name="turbine" id="turbine">
+						<option value="unselected">Select</option>
 						<option value="waterfall">Waterfall</option>
 						<option value="mountain">Mountain</option>
 						<option value="apples">Apples</option>
@@ -64,6 +69,7 @@
 					<img src="WaterDrop.jpg" height="480px" width="720px" alt="Image of a Water Drop">
 					<br> 				
 					<select name="waterdrop" id="waterdrop">
+						<option value="unselected">Select</option>
 						<option value="waterfall">Waterfall</option>
 						<option value="mountain">Mountain</option>
 						<option value="apples">Apples</option>
@@ -76,6 +82,7 @@
 					<img src="Mountain.jpg" height="480px" width="720px" alt="Image of a Mountain">
 					<br> 				
 					<select name="mountain" id="mountain">
+						<option value="unselected">Select</option>
 						<option value="waterfall">Waterfall</option>
 						<option value="mountain">Mountain</option>
 						<option value="apples">Apples</option>
@@ -88,8 +95,10 @@
 		</table>
 		<p id="result0"></p>
 		<p id="time stamp"></p>
+		<p id="score"></p>
 		<p id="test"></p>
 		<button id="submitButton" onclick="getText()">submit</button>
+		
 		<script> 
 			
 			var wf0 = document.getElementById("waterfall");
@@ -110,11 +119,11 @@
 			var wf5 = document.getElementById("mountain");
             var wfResult5 = wf5.options[wf5.selectedIndex].text;
 			
-			var myButton = document.getElementById("submitButton");
+
 			if(wfResult0 != wfResult1 || wfResult0 != wfResult2 || wfResult0 != wfResult3 || wfResult0 != wfResult4 || wfResult0 != wfResult5
 				|| wfResult1 != wfResult2 ||wfResult1 != wfResult3 || wfResult1 != wfResult4 || wfResult1 != wfResult5 || wfResult2 != wfResult3
 				||wfResult2 != wfResult4 || wfResult2 != wfResult5 || wfResult3 != wfResult4 || wfResult3 != wfResult5 || wfResult4 != wfResult5){
-
+					var myButton = document.getElementById("submitButton");
 					myButton.addEventListener('click', doStuff, false)
 					function doStuff() {
 						myButton.textContent = "submitted";
@@ -150,19 +159,52 @@
 				var space = ", ";
 				var finalResult = beginning0.concat(wfResult0, space, wfResult1, space, wfResult2, space, wfResult3, space, wfResult4, space, wfResult5);
 				var FinalTime = beginning1.concat(timeStamp);
+				var error = "Duplicate Answers"
+				var score = getScore(wfResult0,wfResult1,wfResult2,wfResult3,wfResult4,wfResult5);
 				
 				if(wfResult0 == wfResult1 || wfResult0 == wfResult2 || wfResult0 == wfResult3 || wfResult0 == wfResult4 || wfResult0 == wfResult5
 					|| wfResult1 == wfResult2 ||wfResult1 == wfResult3 || wfResult1 == wfResult4 || wfResult1 == wfResult5 || wfResult2 == wfResult3
 					||wfResult2 == wfResult4 || wfResult2 == wfResult5 || wfResult3 == wfResult4 || wfResult3 == wfResult5 || wfResult4 == wfResult5){
-					document.getElementById("test").innerHTML = "Duplicate answers, please refresh and try again";
+					document.getElementById("test").innerHTML = "Duplicate answers, please try again.";
+					return error;
 				}
 				else{
 					document.getElementById("result0").innerHTML = finalResult;
 					document.getElementById("time stamp").innerHTML = FinalTime;
+					document.getElementById("score").innerHTML = score + "%";
+					sessionStorage.setItem("finalResult",finalResult);
+					window.location.href =("Submitted Page.html")
+					return finalResult + FinalTime;
 				}
             }
-            
+			
+			function getScore(one, two, three, four, five, six){
+				var score = 0;
+				if(one == "Waterfall"){
+				score = score + 1;
+				}
+				if(two == "Apples"){
+				score = score + 1;
+				}
+				if(three == "Space"){
+				score = score + 1;
+				}
+				if(four == "Turbines"){
+				score = score + 1;
+				}
+				if(five == "Water Drop"){
+				score = score + 1;
+				}
+				if(six == "Mountain"){
+				score = score + 1;
+				}
+				score = (score/6.0) * 100;
+				score = score.toFixed(2);
+				sessionStorage.setItem("score",score);
+				return score;
+			}
         </script>
+		
 		
 	</body>
 	

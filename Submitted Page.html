@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<title>Submitted Page </title>
+	</head>
+	<body>
+		<h1>OIT CSET Major Selection Game</h1>
+		<h2> Thank You For Submitting </h2>
+		<p> Your response has been logged as an anonymous user. </p>
+		<p id="score"></p>
+		<p id="timeStamp"></p>
+		
+		<script>
+			var timeStamp = new Date();
+			var Formatting = "Your score is: ";
+			var Formatting2 = "%"
+			var score = sessionStorage.getItem("score");
+			var scoreReturn = Formatting.concat(score, Formatting2);
+			document.getElementById("score").innerHTML = scoreReturn;
+			document.getElementById("timeStamp").innerHTML = timeStamp;
+        </script>
+		
+	</body>
+</html>
