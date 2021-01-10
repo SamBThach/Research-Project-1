@@ -2,17 +2,22 @@
 <html lang="en">
 
 	<head>
+		<meta charset="utf-8">
 		<title> Major Selection Game </title>
+		<link rel="stylesheet" type="text/css" href="Research Website.css">
 	</head>
 	<body>
 		<?php include("Research Website.html");?>
-		<h1>OIT CSET Major Selection Game</h1>
-		<h2>Please match the below images with what you believe is the best answer. Your answers will be logged anonymously.</h2>
+		<img src="OIT logo.png" height="10%" width="10%" alt="Oregon Tech Logo" id = "Logo">
+		<span id="pageTitle">OIT CSET Major Selection Game</span>
+		
 
-		<table>
+		<table id="pictureTable">
+			<h2 id="question">Please match the below images with what you believe is the best answer</h2>
 			<tr>
+				
 				<td>
-					<img src="Waterfall.jpg" height="480px" width="720px" alt="Image of Waterfall">
+					<img src="Waterfall.jpg" height="200px" width="300px" alt="Image of Waterfall">
 					<br>
 					<select name="waterfall" id="waterfall">
 						<option value="unselected">Select</option>
@@ -25,22 +30,9 @@
 					</select>
 				</td>
 				<td>
-					<img src="Apples.jpg" height="480px" width="720px" alt="Image of Green Apples">
+					<img src="Apples.jpg" height="200px" width="300px" alt="Image of Green Apples">
 					<br>
 					<select name="apples" id="apples">
-						<option value="unselected">Select</option>
-						<option value="waterfall">Waterfall</option>
-						<option value="mountain">Mountain</option>
-						<option value="apples">Apples</option>
-						<option value="space">Space</option>
-						<option value="turbines">Turbines</option>
-						<option value="water drop">Water Drop</option>
-					</select>
-				</td>
-				<td>
-					<img src="Space.jpg" height="480px" width="720px" alt="Image of Space">
-					<br> 				
-					<select name="space" id="space">
 						<option value="unselected">Select</option>
 						<option value="waterfall">Waterfall</option>
 						<option value="mountain">Mountain</option>
@@ -53,7 +45,20 @@
 			</tr>
 			<tr>
 				<td>
-					<img src="Turbines.jpg" height="480px" width="720px" alt="Image of Field With Wind Turbines">
+					<img src="Space.jpg" height="200px" width="300px" alt="Image of Space">
+					<br> 				
+					<select name="space" id="space">
+						<option value="unselected">Select</option>
+						<option value="waterfall">Waterfall</option>
+						<option value="mountain">Mountain</option>
+						<option value="apples">Apples</option>
+						<option value="space">Space</option>
+						<option value="turbines">Turbines</option>
+						<option value="water drop">Water Drop</option>
+					</select>
+				</td>
+				<td>
+					<img src="Turbines.jpg" height="200px" width="300px" alt="Image of Field With Wind Turbines">
 					<br> 				
 					<select name="turbine" id="turbine">
 						<option value="unselected">Select</option>
@@ -65,8 +70,10 @@
 						<option value="water drop">Water Drop</option>
 					</select>
 				</td>
+			</tr>
+			<tr>
 				<td>
-					<img src="WaterDrop.jpg" height="480px" width="720px" alt="Image of a Water Drop">
+					<img src="WaterDrop.jpg" height="200px" width="300px" alt="Image of a Water Drop">
 					<br> 				
 					<select name="waterdrop" id="waterdrop">
 						<option value="unselected">Select</option>
@@ -79,7 +86,7 @@
 					</select>
 				</td>
 				<td>
-					<img src="Mountain.jpg" height="480px" width="720px" alt="Image of a Mountain">
+					<img src="Mountain.jpg" height="200px" width="300px" alt="Image of a Mountain">
 					<br> 				
 					<select name="mountain" id="mountain">
 						<option value="unselected">Select</option>
