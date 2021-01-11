@@ -18,7 +18,7 @@ body{
 }
 #pageTitle{
 	vertical-align: 19%;
-	background-color: #0000FF;
+	background-color: #0B335E;
 	padding-right: 0.3%;
 	color: #FFFFFF;
 	font-size: 300%;
@@ -31,10 +31,6 @@ body{
 	padding-bottom: 0.5%;
 	text-align: center;
 }
-#Logo{
-	background-color: #0000FF;
-	margin-top: 1%;
-	margin-bottom: 0%;
-	margin-right: 0;
-	padding-bottom: 0;
+#heading{
+		background-color: #0B335E;
 }
