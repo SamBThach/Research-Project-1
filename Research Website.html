@@ -5,9 +5,9 @@
 		<meta charset="utf-8">
 		<title> Major Selection Game </title>
 		<link rel="stylesheet" type="text/css" href="Research Website.css">
+		<?php include("Research Website.html");?>
 	</head>
 	<body>
-		<?php include("Research Website.html");?>
 		<div id ="heading">
 			<img src="OIT logo.png" height="50px" width="300px" alt="Oregon Tech Logo" id = "Logo">
 			<span id="pageTitle">OIT CSET Major Selection Game</span>
@@ -18,7 +18,7 @@
 			<tr>
 				
 				<td>
-					<img src="Waterfall.jpg" height="200px" width="300px" alt="Image of Waterfall">
+					<img src="Waterfall.jpg" height="200px" width="300px" alt="Image of Waterfall" id ="waterfallImage">
 					<br>
 					<select name="waterfall" id="waterfall">
 						<option value="unselected">Select</option>
@@ -31,7 +31,7 @@
 					</select>
 				</td>
 				<td>
-					<img src="Apples.jpg" height="200px" width="300px" alt="Image of Green Apples">
+					<img src="Apples.jpg" height="200px" width="300px" alt="Image of Green Apples" id ="applesImage">
 					<br>
 					<select name="apples" id="apples">
 						<option value="unselected">Select</option>
@@ -46,7 +46,7 @@
 			</tr>
 			<tr>
 				<td>
-					<img src="Space.jpg" height="200px" width="300px" alt="Image of Space">
+					<img src="Space.jpg" height="200px" width="300px" alt="Image of Space" id ="spaceImage">
 					<br> 				
 					<select name="space" id="space">
 						<option value="unselected">Select</option>
@@ -59,7 +59,7 @@
 					</select>
 				</td>
 				<td>
-					<img src="Turbines.jpg" height="200px" width="300px" alt="Image of Field With Wind Turbines">
+					<img src="Turbines.jpg" height="200px" width="300px" alt="Image of Field With Wind Turbines" id ="turbinesImage">
 					<br> 				
 					<select name="turbine" id="turbine">
 						<option value="unselected">Select</option>
@@ -74,7 +74,7 @@
 			</tr>
 			<tr>
 				<td>
-					<img src="WaterDrop.jpg" height="200px" width="300px" alt="Image of a Water Drop">
+					<img src="WaterDrop.jpg" height="200px" width="300px" alt="Image of a Water Drop" id ="waterDropImage">
 					<br> 				
 					<select name="waterdrop" id="waterdrop">
 						<option value="unselected">Select</option>
@@ -87,7 +87,7 @@
 					</select>
 				</td>
 				<td>
-					<img src="Mountain.jpg" height="200px" width="300px" alt="Image of a Mountain">
+					<img src="Mountain.jpg" height="200px" width="300px" alt="Image of a Mountain" id ="mountainImage">
 					<br> 				
 					<select name="mountain" id="mountain">
 						<option value="unselected">Select</option>
@@ -100,12 +100,24 @@
 					</select>
 				</td>
 			</tr>
+			<tr>
+				<td id = submitButton>
+					<button onclick="getText()">submit</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p id="error"></p>
+				</td>
+			</tr>
+
 		</table>
+		<p id="disclaimer"> Your response will be logged anonymously</p>
 		<p id="result0"></p>
 		<p id="time stamp"></p>
 		<p id="score"></p>
-		<p id="test"></p>
-		<button id="submitButton" onclick="getText()">submit</button>
+
+
 		
 		<script> 
 			
@@ -178,7 +190,7 @@
 					||wfResult0 != "Select" || wfResult0 != "Select" || wfResult0 != "Select" || wfResult0 != "Select" || wfResult0 != "Select"
 					|| wfResult1 != "Select" ||wfResult1 != "Select" || wfResult1 != "Select" || wfResult1 != "Select" || wfResult2 != "Select"
 					||wfResult2 != "Select" || wfResult2 != "Select" || wfResult3 != "Select" || wfResult3 != "Select" || wfResult4 != "Select"){
-					document.getElementById("test").innerHTML = "Duplicate answers or left on default, please try again.";
+					document.getElementById("error").innerHTML = "Duplicate answers or left on default, please try again.";
 					return error;
 				}
 				else{
