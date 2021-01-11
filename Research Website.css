@@ -18,9 +18,8 @@ body{
 	padding-top: 3%;
 }
 #pageTitle{
-	vertical-align: 16.5%;
+	vertical-align: 17%;
 	background-color: #0B335E;
-	padding-right: 0.3%;
 	color: #FFFFFF;
 	font-size: 300%;
 }
@@ -38,7 +37,7 @@ body{
 	margin-bottom: 0%;
 	padding-bottom: 0.5%;
 	text-align: center;
-	font-size: 14px;
+	font-size: 13px;
 	margin-top: 5%;
 }
 #mountainImage{
