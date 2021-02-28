@@ -5,138 +5,132 @@
 		<meta charset="utf-8">
 		<title> Major Selection Game </title>
 		<link rel="stylesheet" type="text/css" href="Research Website.css">
-		<?php include("Research Website.html");?>
 	</head>
 	<body>
 		<div id ="heading">
-			<img src="OIT logo.png" height="50px" width="300px" alt="Oregon Tech Logo" id = "Logo">
+			<img src="OIT logo.png" height="50px" width="400px" alt="Oregon Tech Logo" id = "Logo">
 			<span id="pageTitle">OIT CSET Major Selection Game</span>
 		</div>
-
-		<table id="pictureTable">
-			<h2 id="question">Please match the below images with what you believe is the best answer</h2>
-			<tr>
-				
-				<td>
-					<img src="Waterfall.jpg" height="200px" width="300px" alt="Image of Waterfall" id ="waterfallImage">
-					<br>
-					<select name="waterfall" id="waterfall">
-						<option value="unselected">Select</option>
-						<option value="waterfall">Waterfall</option>
-						<option value="mountain">Mountain</option>
-						<option value="apples">Apples</option>
-						<option value="space">Space</option>
-						<option value="turbines">Turbines</option>
-						<option value="water drop">Water Drop</option>
-					</select>
-				</td>
-				<td>
-					<img src="Apples.jpg" height="200px" width="300px" alt="Image of Green Apples" id ="applesImage">
-					<br>
-					<select name="apples" id="apples">
-						<option value="unselected">Select</option>
-						<option value="waterfall">Waterfall</option>
-						<option value="mountain">Mountain</option>
-						<option value="apples">Apples</option>
-						<option value="space">Space</option>
-						<option value="turbines">Turbines</option>
-						<option value="water drop">Water Drop</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<img src="Space.jpg" height="200px" width="300px" alt="Image of Space" id ="spaceImage">
-					<br> 				
-					<select name="space" id="space">
-						<option value="unselected">Select</option>
-						<option value="waterfall">Waterfall</option>
-						<option value="mountain">Mountain</option>
-						<option value="apples">Apples</option>
-						<option value="space">Space</option>
-						<option value="turbines">Turbines</option>
-						<option value="water drop">Water Drop</option>
-					</select>
-				</td>
-				<td>
-					<img src="Turbines.jpg" height="200px" width="300px" alt="Image of Field With Wind Turbines" id ="turbinesImage">
-					<br> 				
-					<select name="turbine" id="turbine">
-						<option value="unselected">Select</option>
-						<option value="waterfall">Waterfall</option>
-						<option value="mountain">Mountain</option>
-						<option value="apples">Apples</option>
-						<option value="space">Space</option>
-						<option value="turbines">Turbines</option>
-						<option value="water drop">Water Drop</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<img src="WaterDrop.jpg" height="200px" width="300px" alt="Image of a Water Drop" id ="waterDropImage">
-					<br> 				
-					<select name="waterdrop" id="waterdrop">
-						<option value="unselected">Select</option>
-						<option value="waterfall">Waterfall</option>
-						<option value="mountain">Mountain</option>
-						<option value="apples">Apples</option>
-						<option value="space">Space</option>
-						<option value="turbines">Turbines</option>
-						<option value="water drop">Water Drop</option>
-					</select>
-				</td>
-				<td>
-					<img src="Mountain.jpg" height="200px" width="300px" alt="Image of a Mountain" id ="mountainImage">
-					<br> 				
-					<select name="mountain" id="mountain">
-						<option value="unselected">Select</option>
-						<option value="waterfall">Waterfall</option>
-						<option value="mountain">Mountain</option>
-						<option value="apples">Apples</option>
-						<option value="space">Space</option>
-						<option value="turbines">Turbines</option>
-						<option value="water drop">Water Drop</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td id = submitButton>
-					<button onclick="getText()">submit</button>
-				</td>
-			</tr>
-			<tr>
-				<td>
+		<form action="Data_Collect.php" method="post">
+			<table id="pictureTable">
+				<h2 id="question">Please match the below images with what you believe is the best answer</h2>
+				<tr>
+					<td>
+						<img src="Cybersecurity.png" height="250px" width="400px" alt="Image of Cybersecurity" id ="CybersecurityImage">
+						<br>
+						<select name="Cybersecurity" id="Cybersecurity" name="Cybersecurity">
+							<option value="unselected">Select</option>
+							<option value="Cybersecurity">Cybersecurity</option>
+							<option value="Computer Engineering">Computer Engineering</option>
+							<option value="Applied Maths">Applied Maths</option>
+							<option value="Software Engineering">Software Engineering</option>
+							<option value="Embedded Systems">Embedded Systems</option>
+							<option value="Data Science">Data Science</option>
+						</select>
+					</td>
+					<td>
+						<img src="Applied Maths.png" height="250px" width="400px" alt="Image of Green Applied Maths" id ="AppliedMathsImage">
+						<br>
+						<select name="Applied Maths" id="Applied Maths" name="Applied Maths">
+							<option value="unselected">Select</option>
+							<option value="Cybersecurity">Cybersecurity</option>
+							<option value="Computer Engineering">Computer Engineering</option>
+							<option value="Applied Maths">Applied Maths</option>
+							<option value="Software Engineering">Software Engineering</option>
+							<option value="Embedded Systems">Embedded Systems</option>
+							<option value="Data Science">Data Science</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="Software Engineering.png" height="250px" width="400px" alt="Image of Software Engineering" id ="SoftwareEngineeringImage">
+						<br> 				
+						<select name="Software Engineering" id="Software Engineering" name="Software Engineering">
+							<option value="unselected">Select</option>
+							<option value="Cybersecurity">Cybersecurity</option>
+							<option value="Computer Engineering">Computer Engineering</option>
+							<option value="Applied Maths">Applied Maths</option>
+							<option value="Software Engineering">Software Engineering</option>
+							<option value="Embedded Systems">Embedded Systems</option>
+							<option value="Data Science">Data Science</option>
+						</select>
+					</td>
+					<td>
+						<img src="Embedded Systems.png" height="250px" width="400px" alt="Image of Field With Wind Embedded Systems" id ="EmbeddedSystemsImage">
+						<br> 				
+						<select name="Embedded Systems" id="Embedded Systems" name="Embedded Systems">
+							<option value="unselected">Select</option>
+							<option value="Cybersecurity">Cybersecurity</option>
+							<option value="Computer Engineering">Computer Engineering</option>
+							<option value="Applied Maths">Applied Maths</option>
+							<option value="Software Engineering">Software Engineering</option>
+							<option value="Embedded Systems">Embedded Systems</option>
+							<option value="Data Science">Data Science</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="Data Science.png" height="250px" width="400px" alt="Image of a Data Science" id ="DataScienceImage">
+						<br> 				
+						<select name="Data Science" id="DataScience" name="Data Science">
+							<option value="unselected">Select</option>
+							<option value="Cybersecurity">Cybersecurity</option>
+							<option value="Computer Engineering">Computer Engineering</option>
+							<option value="Applied Maths">Applied Maths</option>
+							<option value="Software Engineering">Software Engineering</option>
+							<option value="Embedded Systems">Embedded Systems</option>
+							<option value="Data Science">Data Science</option>
+						</select>
+					</td>
+					<td>
+						<img src="Computer Engineering.png" height="250px" width="400px" alt="Image of a Computer Engineering" id ="ComputerEngineeringImage">
+						<br> 				
+						<select name="Computer Engineering" id="Computer Engineering" name="Computer Engineering">
+							<option value="unselected">Select</option>
+							<option value="Cybersecurity">Cybersecurity</option>
+							<option value="Computer Engineering">Computer Engineering</option>
+							<option value="Applied Maths">Applied Maths</option>
+							<option value="Software Engineering">Software Engineering</option>
+							<option value="Embedded Systems">Embedded Systems</option>
+							<option value="Data Science">Data Science</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td id = submitButton>
+						<input type="submit" value="Submit" onclick="getText()">
+					</td>
+				</tr>
+				<tr>
+					<td>
 					<p id="error"></p>
-				</td>
-			</tr>
+					</td>
+				</tr>
+			</table>
+		</form>
 
-		</table>
-		<p id="disclaimer"> Your response will be logged anonymously</p>
-		<p id="result0"></p>
-		<p id="time stamp"></p>
-		<p id="score"></p>
 
 
 		
 		<script> 
-			
-			var wf0 = document.getElementById("waterfall");
+			var wf0 = document.getElementById("Cybersecurity");
             var wfResult0 = wf0.options[wf0.selectedIndex].text;
 				
-			var wf1 = document.getElementById("apples");
+			var wf1 = document.getElementById("Applied Maths");
             var wfResult1 = wf1.options[wf1.selectedIndex].text;
 				
-			var wf2 = document.getElementById("space");
+			var wf2 = document.getElementById("Software Engineering");
             var wfResult2 = wf2.options[wf2.selectedIndex].text;
 				
-			var wf3 = document.getElementById("turbine");
+			var wf3 = document.getElementById("Embedded Systems");
             var wfResult3 = wf3.options[wf3.selectedIndex].text;
 				
-			var wf4 = document.getElementById("waterdrop");
+			var wf4 = document.getElementById("Data Science");
             var wfResult4 = wf4.options[wf4.selectedIndex].text;
 				
-			var wf5 = document.getElementById("mountain");
+			var wf5 = document.getElementById("Computer Engineering");
             var wfResult5 = wf5.options[wf5.selectedIndex].text;
 			
 
@@ -156,31 +150,30 @@
 
 		<script>
             function getText(){
-                var wf0 = document.getElementById("waterfall");
+                var wf0 = document.getElementById("Cybersecurity");
                 var wfResult0 = wf0.options[wf0.selectedIndex].text;
 				
-				var wf1 = document.getElementById("apples");
+				var wf1 = document.getElementById("Applied Maths");
                 var wfResult1 = wf1.options[wf1.selectedIndex].text;
 				
-				var wf2 = document.getElementById("space");
+				var wf2 = document.getElementById("Software Engineering");
                 var wfResult2 = wf2.options[wf2.selectedIndex].text;
 				
-				var wf3 = document.getElementById("turbine");
+				var wf3 = document.getElementById("Embedded Systems");
                 var wfResult3 = wf3.options[wf3.selectedIndex].text;
 				
-				var wf4 = document.getElementById("waterdrop");
+				var wf4 = document.getElementById("Data Science");
                 var wfResult4 = wf4.options[wf4.selectedIndex].text;
 				
-				var wf5 = document.getElementById("mountain");
+				var wf5 = document.getElementById("Computer Engineering");
                 var wfResult5 = wf5.options[wf5.selectedIndex].text;
 				
 				var beginning0 = "Your answers: ";
 				var beginning1 = "Submitted at: ";
-				var timeStamp = new Date();
+
 				
-				var space = ", ";
-				var finalResult = beginning0.concat(wfResult0, space, wfResult1, space, wfResult2, space, wfResult3, space, wfResult4, space, wfResult5);
-				var FinalTime = beginning1.concat(timeStamp);
+				var Software Engineering = ", ";
+				var finalResult = beginning0.concat(wfResult0, Software Engineering, wfResult1, Software Engineering, wfResult2, Software Engineering, wfResult3, Software Engineering, wfResult4, Software Engineering, wfResult5);
 				var error = "Duplicate Answers"
 				var score = getScore(wfResult0,wfResult1,wfResult2,wfResult3,wfResult4,wfResult5);
 				
@@ -199,28 +192,27 @@
 					document.getElementById("score").innerHTML = score + "%";
 					sessionStorage.setItem("finalResult",finalResult);
 					window.location.href =("Submitted Page.html")
-					return finalResult + FinalTime;
 				}
             }
 			
 			function getScore(one, two, three, four, five, six){
 				var score = 0;
-				if(one == "Waterfall"){
+				if(one == "Cybersecurity"){
 				score = score + 1;
 				}
-				if(two == "Apples"){
+				if(two == "Applied Maths"){
 				score = score + 1;
 				}
-				if(three == "Space"){
+				if(three == "Software Engineering"){
 				score = score + 1;
 				}
-				if(four == "Turbines"){
+				if(four == "Embedded Systems"){
 				score = score + 1;
 				}
-				if(five == "Water Drop"){
+				if(five == "Data Science"){
 				score = score + 1;
 				}
-				if(six == "Mountain"){
+				if(six == "Computer Engineering"){
 				score = score + 1;
 				}
 				score = (score/6.0) * 100;
