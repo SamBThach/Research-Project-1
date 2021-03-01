@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<title>Consent Form </title>
+		<link rel="stylesheet" type="text/css" href="Consent Form.css">
+	</head>
+	<body>
+		<div id = "Heading">
+			<img src="OIT logo.png" height="50px" width="300" alt="Oregon Tech Logo" id = "logo">
+			<span id = "title">Consent Form</span>
+		</div>
+		<div id= "Disclaimer">
+			<h3> The following is a consent form for a web-based matching game.</h3>
+			<p> The web-based matching game consists of six images that will be matched to 6 phrases.
+			<p> Privacy is important. The answers that participants submit will be collected and stored in a database.
+			<p> Data stored will be held anonymously and will not hold any personal data that can be traced back to participants.
+			<p> The stored data will only be accessible by verified researchers and will not be accessible by any person, organization, or company </p>
+			<p> Data will be used in the following ways:<p>
+			<ul>
+				<li>Analyzed and published in a research paper</li>
+			</ul>
+			<p> By checking and hitting submit, you agree to partake in the web-based matching game and for researchers to store and use your data in the above ways.</p>
+			<input type="checkbox" id="box" value="consent">
+			<input type="submit" id="submit" value="Submit" onclick="getConsent()">
+			<p id = error></p>
+		</div>
+		
+		<script>
+		function getConsent(){
+			var test = document.getElementById("box").checked;
+
+			if (document.getElementById("box").checked){
+				window.location.href =("Research Website.html")
+			}
+			else{
+			document.getElementById("error").innerHTML = "Please check the box"
+			}
+		}
+		</script>
+	</body>
+</html>
