@@ -1,18 +1,5 @@
 <html>
-<?php 
-	$host = '127.0.0.1';
-	$username = 'root';
-	$password = '';
-			
-	$connection = mysqli_connect($host,$username,$password,"research project");
-			
-	if(!$connection){
-		echo 'No Connection';
-	}
-	if(!mysqli_select_db($connection, 'research project')){
-		echo 'No database';
-	}
-			
+<?php 		
 	$Input_One = $_POST['Cybersecurity'];
 	$Input_Two = $_POST['Applied Maths'];
 	$Input_Three = $_POST['Software Engineering'];
@@ -28,6 +15,7 @@
 				||$Input_Two != "unselected" || $Input_Two != "unselected" || $Input_Two != "unselected" || $Input_Two != "unselected" || $Input_Three != "unselected"
 				||$Input_Three != "unselected" || $Input_Three != "unselected" || $Input_Four != "unselected" || $Input_Four != "unselected" || $Input_Five != "unselected"){
 		$sql = "INSERT INTO user_answers(User_Answer_One,User_Answer_Two,User_Answer_Three,User_Answer_Four,User_Answer_Five,User_Answer_Six,Time_Stamp) VALUES('$Input_One','$Input_Two','$Input_Three','$Input_Four','$Input_Five','$Input_Six','$Time_Stamp')";
+		$myfile = fopen("testfile.txt", "a+");
 		if(!mysqli_query($connection,$sql)){
 			echo 'Values Not Collected';
 		}
@@ -36,6 +24,7 @@
 			echo date(DATE_RFC2822);
 		}
 		header("Location: Submitted Page.html");
+		fclose($myfile);
 		exit();
 	}
 	else{

@@ -16,3 +16,10 @@ body{
 	font-size: 200%;
 
 }
+#submit{
+	font-size: 40px;
+	color: white;
+	width: 160px;
+	height: 80px;
+	background-color: #0B335E;
+}
