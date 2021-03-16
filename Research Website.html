@@ -11,105 +11,105 @@
 			<img src="OIT logo.png" height="50px" width="400px" alt="Oregon Tech Logo" id = "Logo">
 			<span id="pageTitle">OIT CSET Major Selection Game</span>
 		</div>
-			<form id="Matching" method="post" onsubmit="return false">
-			<table id="pictureTable">
-				<h2 id="question">Please match the below images with what you believe is the best answer</h2>
-				<tr>
-					<td>
-						<img src="Cybersecurity.png" height="250px" width="400px" alt="Image of Cybersecurity" id ="CybersecurityImage">
-						<br>
-						<select name="Cybersecurity" id="Cybersecurity" name="Cybersecurity">
-							<option value="unselected">Select</option>
-							<option value="Cybersecurity">Cybersecurity</option>
-							<option value="Computer Engineering">Computer Engineering</option>
-							<option value="Applied Maths">Applied Maths</option>
-							<option value="Software Engineering">Software Engineering</option>
-							<option value="Embedded Systems">Embedded Systems</option>
-							<option value="Data Science">Data Science</option>
-						</select>
-					</td>
-					<td>
-						<img src="Applied Maths.png" height="250px" width="400px" alt="Image of Green Applied Maths" id ="AppliedMathsImage">
-						<br>
-						<select name="Applied Maths" id="Applied Maths" name="Applied Maths">
-							<option value="unselected">Select</option>
-							<option value="Cybersecurity">Cybersecurity</option>
-							<option value="Computer Engineering">Computer Engineering</option>
-							<option value="Applied Maths">Applied Maths</option>
-							<option value="Software Engineering">Software Engineering</option>
-							<option value="Embedded Systems">Embedded Systems</option>
-							<option value="Data Science">Data Science</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="Software Engineering.png" height="250px" width="400px" alt="Image of Software Engineering" id ="SoftwareEngineeringImage">
-						<br> 				
-						<select name="Software Engineering" id="Software Engineering" name="Software Engineering">
-							<option value="unselected">Select</option>
-							<option value="Cybersecurity">Cybersecurity</option>
-							<option value="Computer Engineering">Computer Engineering</option>
-							<option value="Applied Maths">Applied Maths</option>
-							<option value="Software Engineering">Software Engineering</option>
-							<option value="Embedded Systems">Embedded Systems</option>
-							<option value="Data Science">Data Science</option>
-						</select>
-					</td>
-					<td>
-						<img src="Embedded Systems.png" height="250px" width="400px" alt="Image of Field With Wind Embedded Systems" id ="EmbeddedSystemsImage">
-						<br> 				
-						<select name="Embedded Systems" id="Embedded Systems" name="Embedded Systems">
-							<option value="unselected">Select</option>
-							<option value="Cybersecurity">Cybersecurity</option>
-							<option value="Computer Engineering">Computer Engineering</option>
-							<option value="Applied Maths">Applied Maths</option>
-							<option value="Software Engineering">Software Engineering</option>
-							<option value="Embedded Systems">Embedded Systems</option>
-							<option value="Data Science">Data Science</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="Data Science.png" height="250px" width="400px" alt="Image of a Data Science" id ="DataScienceImage">
-						<br> 				
-						<select name="Data Science" id="DataScience" name="Data Science">
-							<option value="unselected">Select</option>
-							<option value="Cybersecurity">Cybersecurity</option>
-							<option value="Computer Engineering">Computer Engineering</option>
-							<option value="Applied Maths">Applied Maths</option>
-							<option value="Software Engineering">Software Engineering</option>
-							<option value="Embedded Systems">Embedded Systems</option>
-							<option value="Data Science">Data Science</option>
-						</select>
-					</td>
-					<td>
-						<img src="Computer Engineering.png" height="250px" width="400px" alt="Image of a Computer Engineering" id ="ComputerEngineeringImage">
-						<br> 				
-						<select name="Computer Engineering" id="Computer Engineering" name="Computer Engineering">
-							<option value="unselected">Select</option>
-							<option value="Cybersecurity">Cybersecurity</option>
-							<option value="Computer Engineering">Computer Engineering</option>
-							<option value="Applied Maths">Applied Maths</option>
-							<option value="Software Engineering">Software Engineering</option>
-							<option value="Embedded Systems">Embedded Systems</option>
-							<option value="Data Science">Data Science</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td id = submitButton>
-						<input type="submit" value="Submit" onclick="getText()">
-					</td>
-				</tr>
-				<tr>
-					<td>
-					<p id="error"></p>
-					</td>
-				</tr>
-			</table>
-		</form>
+			<form action="Data_Collect.php" method="post">
+				<table id="pictureTable">
+					<h2 id="question">Please match the below images with what you believe is the best answer</h2>
+					<tr>
+						<td>
+							<img src="Cybersecurity.png" height="250px" width="400px" alt="Image of Cybersecurity" id ="CybersecurityImage">
+							<br>
+							<select name="Cybersecurity" id="Cybersecurity" name="Cybersecurity">
+								<option value="unselected">Select</option>
+								<option value="Cybersecurity">Cybersecurity</option>
+								<option value="Computer Engineering">Computer Engineering</option>
+								<option value="Applied Maths">Applied Maths</option>
+								<option value="Software Engineering">Software Engineering</option>
+								<option value="Embedded Systems">Embedded Systems</option>
+								<option value="Data Science">Data Science</option>
+							</select>
+						</td>
+						<td>
+							<img src="Applied Maths.png" height="250px" width="400px" alt="Image of Green Applied Maths" id ="AppliedMathsImage">
+							<br>
+							<select name="Applied Maths" id="Applied Maths" name="Applied_Maths">
+								<option value="unselected">Select</option>
+								<option value="Cybersecurity">Cybersecurity</option>
+								<option value="Computer Engineering">Computer Engineering</option>
+								<option value="Applied Maths">Applied Maths</option>
+								<option value="Software Engineering">Software Engineering</option>
+								<option value="Embedded Systems">Embedded Systems</option>
+								<option value="Data Science">Data Science</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="Software Engineering.png" height="250px" width="400px" alt="Image of Software Engineering" id ="SoftwareEngineeringImage">
+							<br> 				
+							<select name="Software Engineering" id="Software Engineering" name="Software_Engineering">
+								<option value="unselected">Select</option>
+								<option value="Cybersecurity">Cybersecurity</option>
+								<option value="Computer Engineering">Computer Engineering</option>
+								<option value="Applied Maths">Applied Maths</option>
+								<option value="Software Engineering">Software Engineering</option>
+								<option value="Embedded Systems">Embedded Systems</option>
+								<option value="Data Science">Data Science</option>
+							</select>
+						</td>
+						<td>
+							<img src="Embedded Systems.png" height="250px" width="400px" alt="Image of Field With Wind Embedded Systems" id ="EmbeddedSystemsImage">
+							<br> 				
+							<select name="Embedded Systems" id="Embedded Systems" name="Embedded_Systems">
+								<option value="unselected">Select</option>
+								<option value="Cybersecurity">Cybersecurity</option>
+								<option value="Computer Engineering">Computer Engineering</option>
+								<option value="Applied Maths">Applied Maths</option>
+								<option value="Software Engineering">Software Engineering</option>
+								<option value="Embedded Systems">Embedded Systems</option>
+								<option value="Data Science">Data Science</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="Data Science.png" height="250px" width="400px" alt="Image of a Data Science" id ="DataScienceImage">
+							<br> 				
+							<select name="Data Science" id="DataScience" name="Data_Science">
+								<option value="unselected">Select</option>
+								<option value="Cybersecurity">Cybersecurity</option>
+								<option value="Computer Engineering">Computer Engineering</option>
+								<option value="Applied Maths">Applied Maths</option>
+								<option value="Software Engineering">Software Engineering</option>
+								<option value="Embedded Systems">Embedded Systems</option>
+								<option value="Data Science">Data Science</option>
+							</select>
+						</td>
+						<td>
+							<img src="Computer Engineering.png" height="250px" width="400px" alt="Image of a Computer Engineering" id ="ComputerEngineeringImage">
+							<br> 				
+							<select name="Computer Engineering" id="Computer Engineering" name="Computer_Engineering">
+								<option value="unselected">Select</option>
+								<option value="Cybersecurity">Cybersecurity</option>
+								<option value="Computer Engineering">Computer Engineering</option>
+								<option value="Applied Maths">Applied Maths</option>
+								<option value="Software Engineering">Software Engineering</option>
+								<option value="Embedded Systems">Embedded Systems</option>
+								<option value="Data Science">Data Science</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td id = submitButton>
+							<input type="submit" value="Submit" onclick="getText()">
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p id="error"></p>
+						</td>
+					</tr>
+				</table>
+			</form>
 
 
 		<script> 
