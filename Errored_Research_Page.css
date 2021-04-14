@@ -24,7 +24,7 @@ body{
 	font-size: 300%;
 }
 #question{
-	margin-top: 2%;
+	margin-top: 0%;
 	margin-bottom: 0.2%;
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;
@@ -59,10 +59,11 @@ body{
 	border: 2px solid black;
 }
 #error{
-	margin-top: 1.5%;
+	margin-top: 1%;
 	margin-bottom: 0%;
 	padding-top: 0%;
 	padding-bottom: 0%;
-	font-size: 19px;
+	font-size: 48px;
 	color: red;
+	text-align: center;
 }

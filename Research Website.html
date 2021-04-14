@@ -105,7 +105,7 @@
 					</tr>
 					<tr>
 						<td>
-						<p id="error" size = "16px"></p>
+						<p id="error"></p>
 						</td>
 					</tr>
 				</table>
@@ -165,6 +165,13 @@
 				
 				var wf5 = document.getElementById("Computer Engineering");
                 var wfResult5 = wf5.options[wf5.selectedIndex].text;
+				
+				sessionStorage.setItem("Cybersecurity",Cybersecurity_Saved);
+				sessionStorage.setItem("Applied Maths",Applied_Maths_Saved);
+				sessionStorage.setItem("Software Engineering",Software_Engineering_Saved);
+				sessionStorage.setItem("Embedded Systems",Embedded_Systems_Saved);
+				sessionStorage.setItem("DataScience",Data_Science_Saved);
+				sessionStorage.setItem("Computer Engineering",Computer_Engineering_Saved);
 				
 				var beginning0 = "Your answers: ";
 				var beginning1 = "Submitted at: ";

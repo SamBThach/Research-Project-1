@@ -13,6 +13,7 @@
 		</div>
 			<form action="Data_Collect.php" method="post">
 				<table id="pictureTable">
+				<p id="error">Duplicate answers or left on default, please try again.</p>
 					<h2 id="question">Please match the below images with what you believe is the best answer</h2>
 					<tr>
 						<td>
@@ -101,11 +102,6 @@
 					<tr>
 						<td id = submitButton>
 							<input type="submit" value="Submit" onclick="getText()">
-						</td>
-					</tr>
-					<tr>
-						<td>
-						<p id="error">Duplicate answers or left on default, please try again.</p>
 						</td>
 					</tr>
 				</table>

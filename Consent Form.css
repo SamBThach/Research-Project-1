@@ -17,9 +17,10 @@ body{
 
 }
 #submit{
-	font-size: 40px;
+	font-size: 20px;
 	color: white;
-	width: 160px;
-	height: 80px;
+	width: 80px;
+	height: 40px;
 	background-color: #0B335E;
+	margin-left: 0.5%;
 }
