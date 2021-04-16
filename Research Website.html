@@ -100,7 +100,7 @@
 					</tr>
 					<tr>
 						<td id = submitButton>
-							<input type="submit" value="Submit" onclick="getText()">
+							<input type="submit" value="Submit" onsubmit= "getText()">
 						</td>
 					</tr>
 					<tr>
@@ -125,7 +125,7 @@
 			var wf3 = document.getElementById("Embedded Systems");
             var wfResult3 = wf3.options[wf3.selectedIndex].text;
 				
-			var wf4 = document.getElementById("Data Science");
+			var wf4 = document.getElementById("DataScience");
             var wfResult4 = wf4.options[wf4.selectedIndex].text;
 				
 			var wf5 = document.getElementById("Computer Engineering");
@@ -182,12 +182,12 @@
 				var error = "Duplicate Answers"
 				var score = getScore(wfResult0,wfResult1,wfResult2,wfResult3,wfResult4,wfResult5);
 				
-				if(wfResult0 == wfResult1 || wfResult0 == wfResult2 || wfResult0 == wfResult3 || wfResult0 == wfResult4 || wfResult0 == wfResult5
-					|| wfResult1 == wfResult2 ||wfResult1 == wfResult3 || wfResult1 == wfResult4 || wfResult1 == wfResult5 || wfResult2 == wfResult3
-					||wfResult2 == wfResult4 || wfResult2 == wfResult5 || wfResult3 == wfResult4 || wfResult3 == wfResult5 || wfResult4 == wfResult5
-					||wfResult0 == "Select" || wfResult0 == "Select" || wfResult0 == "Select" || wfResult0 == "Select" || wfResult0 == "Select"
-					|| wfResult1 == "Select" ||wfResult1 == "Select" || wfResult1 == "Select" || wfResult1 == "Select" || wfResult2 == "Select"
-					||wfResult2 == "Select" || wfResult2 == "Select" || wfResult3 == "Select" || wfResult3 == "Select" || wfResult4 == "Select"){
+				if(wfResult0 != wfResult1 && wfResult0 != wfResult2 && wfResult0 != wfResult3 && wfResult0 != wfResult4 && wfResult0 != wfResult5
+					&& wfResult1 != wfResult2 &&wfResult1 != wfResult3 && wfResult1 != wfResult4 && wfResult1 != wfResult5 && wfResult2 != wfResult3
+					&&wfResult2 != wfResult4 && wfResult2 != wfResult5 && wfResult3 != wfResult4 && wfResult3 != wfResult5 && wfResult4 != wfResult5
+					&&wfResult0 != "Select" && wfResult0 != "Select" && wfResult0 != "Select" && wfResult0 != "Select" && wfResult0 != "Select"
+					&& wfResult1 != "Select" &&wfResult1 != "Select" && wfResult1 != "Select" && wfResult1 != "Select" && wfResult2 != "Select"
+					&&wfResult2 != "Select" && wfResult2 != "Select" && wfResult3 != "Select" && wfResult3 != "Select" && wfResult4 != "Select"){
 					document.getElementById("error").innerHTML = "Duplicate answers or left on default, please try again.";
 					return error;
 				}
@@ -223,22 +223,7 @@
 				sessionStorage.setItem("score",score);
 				return score;
 			}
-			
-
         </script>
-		<script>
-			function WriteToFile() {
- 
-				set fso = CreateObject("Scripting.FileSystemObject"); 
-				set s   = fso.CreateTextFile("filename.txt", True);
- 
-				s.writeline("test");
-
-				s.Close();
-			}
-		</script>
-		
-
 		 
 	</body>
 	
