@@ -23,7 +23,7 @@
 			echo 'Values Not Collected';
 			echo date(DATE_RFC2822);
 		}
-		header("Location: Submitted Page.html");
+		header("Location: https://csetplacemnet.cset.oit.edu/Submitted\ Page.html");
 		exit();		
 	}
 ?>
