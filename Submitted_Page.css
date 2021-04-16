@@ -1,0 +1,42 @@
+body{
+	background-color: #DEDEDE;
+}
+
+#title{
+	vertical-align: 17%;
+	background-color: #0B335E;
+	color: #FFFFFF;
+	font-size: 300%;
+}
+#Heading{
+	background-color: #0B335E;
+}
+#text{
+	margin-top: 12%;
+	border: hidden;
+	border-radius: 25px 25px 25px 25px;
+	margin-right: 40%;
+	margin-left: 40%;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+#thanks{
+	padding-top: 10%;
+	font-size: 240%;
+}
+#score{
+	vertical-align: center;
+	padding-top: 12%;
+	font-size: 150%;
+}
+#disclaimer{
+	padding-top: 18%;
+	padding-bottom: 0%;
+	margin-bottom: 0%;
+	font-size: 80%;
+}
+#timeStamp{
+	font-size: 80%;
+	padding-top: 0%;
+	padding-bottom: 2%;
+}

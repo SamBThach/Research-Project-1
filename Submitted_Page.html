@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<title>Submitted Page </title>
+		<link rel="stylesheet" type="text/css" href="Submitted Page.css">
+		<?php include("Research Website.html");?>
+	</head>
+	<body>
+		<div id = "Heading">
+			<img src="OIT logo.png" height="50px" width="300" alt="Oregon Tech Logo" id = "logo">
+			<span id = "title">OIT CSET Major Selection Game</span>
+		</div>
+		<div id= "text">
+			<h2 id="thanks"> Thank You For Submitting </h2>
+			<p id="score"></p>
+			<p id="disclaimer"> Your response has been logged as an anonymous user. </p>
+			<p id="timeStamp"></p>
+		</div>
+		
+		<script>
+			var timeStamp = new Date();
+			var Formatting = "Your score is: ";
+			var Formatting2 = "%"
+			var score = sessionStorage.getItem("score");
+			var scoreReturn = Formatting.concat(score, Formatting2);
+			document.getElementById("score").innerHTML = scoreReturn;
+			document.getElementById("timeStamp").innerHTML = timeStamp;
+        </script>
+		
+	</body>
+</html>
