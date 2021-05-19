@@ -19,9 +19,9 @@ body{
 }
 #pageTitle{
 	vertical-align: 17%;
-	background-color: #0B335E;
+
 	color: #FFFFFF;
-	font-size: 300%;
+	font-size: 400%;
 }
 #question{
 	margin-top: 0%;
@@ -66,4 +66,9 @@ body{
 	font-size: 48px;
 	color: red;
 	text-align: center;
+}
+#button{
+	font-size: 20px;
+	width: 80px;
+	height: 40px;
 }
