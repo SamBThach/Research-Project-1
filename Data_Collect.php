@@ -39,23 +39,25 @@
 		   $Input_one != "Select" && $Input_Two != "Select" && $Input_Three != "Select" && 
 		   $Input_Four != "Select" && $Input_Five != "Select" && $Input_Six != "Select"){
 			   
-			   $sql = "INSERT INTO user_inputs(Input1,Input2,Input3,Input4,Input5,Input6,Timestamp) VALUES('$Input_One','$Input_Two','$Input_Three','$Input_Four','$Input_Five','$Input_Six','$Time_Stamp')";
-		   }
+			$sql = "INSERT INTO user_inputs(Input1,Input2,Input3,Input4,Input5,Input6,Timestamp) VALUES('$Input_One','$Input_Two','$Input_Three','$Input_Four','$Input_Five','$Input_Six','$Time_Stamp')";
+			   
+			if(!mysqli_query($connection,$sql))
+			{
+				echo 'Values Not Collected';
+				echo date('Y-m-d H:i:s');
+				header("Location: Data_error.php");
+				exit();
+			}
+			else
+			{
+				header("Location: Submitted_page.php");
+				exit();
+			}
+		}
 		else{
 			header("Location: Errored_Research_Page.php");
 		}										
-		if(!mysqli_query($connection,$sql))
-		{
-			echo 'Values Not Collected';
-			echo date('Y-m-d H:i:s');
-			header("Location: Data_error.php");
-			exit();
-		}
-		else
-		{
-			header("Location: Submitted_page.php");
-			exit();
-		}
+
 	}														
 ?>
 </html>
