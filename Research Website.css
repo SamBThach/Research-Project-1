@@ -19,9 +19,9 @@ body{
 }
 #pageTitle{
 	vertical-align: 17%;
-	background-color: #0B335E;
+
 	color: #FFFFFF;
-	font-size: 300%;
+	font-size: 400%;
 }
 #question{
 	margin-top: 2%;
@@ -29,9 +29,10 @@ body{
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;
 	text-align: center;
+	font-size = 25px;
 }
 #heading{
-		background-color: #0B335E;
+	background-color: #0B335E;
 }
 #disclaimer{
 	margin-bottom: 0%;
@@ -64,5 +65,16 @@ body{
 	padding-top: 0%;
 	padding-bottom: 0%;
 	font-size: 19px;
-	color: red;
+	color
+}
+img:hover {
+transform: scale(2);
+}
+img:hover {
+transform: scale(2);
+}
+#button{
+	font-size: 20px;
+	width: 80px;
+	height: 40px;
 }

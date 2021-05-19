@@ -4,9 +4,9 @@ body{
 
 #title{
 	vertical-align: 17%;
-	background-color: #0B335E;
+
 	color: #FFFFFF;
-	font-size: 300%;
+	font-size: 400%;
 }
 #Heading{
 	background-color: #0B335E;
@@ -17,10 +17,10 @@ body{
 
 }
 #submit{
-	font-size: 20px;
+	font-size: 28px;
 	color: white;
-	width: 80px;
-	height: 40px;
+	width: 120px;
+	height: 50px;
 	background-color: #0B335E;
 	margin-left: 0.5%;
 }
