@@ -1,0 +1,30 @@
+body{
+	background-color: #DEDEDE;
+}
+
+#title{
+	vertical-align: 17%;
+
+	color: #FFFFFF;
+	font-size: 400%;
+}
+#Heading{
+	background-color: #0B335E;
+}
+#text{
+	margin-top: 12%;
+	border: hidden;
+	border-radius: 25px 25px 25px 25px;
+	margin-right: 40%;
+	margin-left: 40%;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+#error{
+	padding-top: 10%;
+	font-size: 240%;
+}
+#contact{
+	text-align: center;
+}
+

@@ -9,7 +9,7 @@
 	if(!$connection)
 	{
 			echo "No connection";
-			header("Location: Data_error.html");
+			header("Location: Data_Collect_Error.html");
 			exit();
 	}
 	else
@@ -30,13 +30,13 @@
 		$_SESSION['input6'] = $Input_Six;
 		
 		if($Input_One != $Input_Two && $Input_One != $Input_Three && $Input_One != $Input_Four &&
-		   $Input_Five != $Input_Two && $Input_One != $Input_Six &&
-		   $Input_Two != $Input_Tree && $Input_Two != $Input_Four && $Input_Two != $Input_Five && 
+		   $Input_One != $Input_Two && $Input_One != $Input_Six &&
+		   $Input_Two != $Input_Three && $Input_Two != $Input_Four && $Input_Two != $Input_Five && 
 		   $Input_Two != $Input_Six && 
-		   $Input_Tree != $Input_Four && $Input_Tree != $Input_Five && $Input_Three != $Input_Six && 
+		   $Input_Three != $Input_Four && $Input_Three != $Input_Five && $Input_Three != $Input_Six && 
 		   $Input_Four != $Input_Five && $Input_Four != $Input_Six && 
 		   $Input_Five != $Input_Six && 
-		   $Input_one != "Select" && $Input_Two != "Select" && $Input_Three != "Select" && 
+		   $Input_One != "Select" && $Input_Two != "Select" && $Input_Three != "Select" && 
 		   $Input_Four != "Select" && $Input_Five != "Select" && $Input_Six != "Select"){
 			   
 			$sql = "INSERT INTO user_inputs(Input1,Input2,Input3,Input4,Input5,Input6,Timestamp) VALUES('$Input_One','$Input_Two','$Input_Three','$Input_Four','$Input_Five','$Input_Six','$Time_Stamp')";
@@ -45,7 +45,7 @@
 			{
 				echo 'Values Not Collected';
 				echo date('Y-m-d H:i:s');
-				header("Location: Data_error.php");
+				header("Location: Data_Collect_Error.html");
 				exit();
 			}
 			else
