@@ -3,13 +3,12 @@
 
 	<head>
 		<?php
-		session_start();
-		$input_1 = $_SESSION['input1'];
-		$input_2 = $_SESSION['input2'];
-		$input_3 = $_SESSION['input3'];
-		$input_4 = $_SESSION['input4'];
-		$input_5 = $_SESSION['input5'];
-		$input_6 = $_SESSION['input6'];
+		$input_1 = $_COOKIE['input1'];
+		$input_2 = $_COOKIE['input2'];
+		$input_3 = $_COOKIE['input3'];
+		$input_4 = $_COOKIE['input4'];
+		$input_5 = $_COOKIE['input5'];
+		$input_6 = $_COOKIE['input6'];
 		?>
 		
 		<script type="text/javascript">
@@ -22,7 +21,6 @@
 		</script>
 		<title>Submitted Page </title>
 		<link rel="stylesheet" type="text/css" href="Submitted_Page.css">
-		<?php include("Research Website.php");?>
 	</head>
 	<body>
 		<div id = "Heading">

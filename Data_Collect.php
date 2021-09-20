@@ -1,6 +1,5 @@
 <html>
 <?php 		
-	session_start();
 	error_reporting(E_ALL);
 	ini_set('display_errors', '1');
 
@@ -22,12 +21,13 @@
 		$Input_Six = $_POST['Computer_Engineering'];
 		$Time_Stamp = date('Y-m-d H:i:s');
 		
-		$_SESSION['input1'] = $Input_One;
-		$_SESSION['input2'] = $Input_Two;
-		$_SESSION['input3'] = $Input_Three;
-		$_SESSION['input4'] = $Input_Four;
-		$_SESSION['input5'] = $Input_Five;
-		$_SESSION['input6'] = $Input_Six;
+		setcookie('input1', $Input_One);
+		setcookie('input2', $Input_Two);
+		setcookie('input3', $Input_Three);
+		setcookie('input4', $Input_Four);
+		setcookie('input5', $Input_Five);
+		setcookie('input6', $Input_Six);
+
 		
 		if($Input_One != $Input_Two && $Input_One != $Input_Three && $Input_One != $Input_Four &&
 		   $Input_One != $Input_Two && $Input_One != $Input_Six &&
