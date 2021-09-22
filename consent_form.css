@@ -1,0 +1,26 @@
+body{
+	background-color: #DEDEDE;
+}
+
+#title{
+	vertical-align: 17%;
+
+	color: #FFFFFF;
+	font-size: 400%;
+}
+#Heading{
+	background-color: #0B335E;
+}
+#Disclaimer{
+	text-align: justify;
+	font-size: 200%;
+
+}
+#submit{
+	font-size: 28px;
+	color: white;
+	width: 120px;
+	height: 50px;
+	background-color: #0B335E;
+	margin-left: 0.5%;
+}

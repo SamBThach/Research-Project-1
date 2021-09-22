@@ -20,11 +20,11 @@
 			var var6 = "<?php echo $input_6; ?>";
 		</script>
 		<title>Submitted Page </title>
-		<link rel="stylesheet" type="text/css" href="Submitted_Page.css">
+		<link rel="stylesheet" type="text/css" href="submitted_page.css">
 	</head>
 	<body>
 		<div id = "Heading">
-			<img src="OIT logo.png" height="67px" width="320px" alt="Oregon Tech Logo" id = "logo">
+			<img src="oit_logo.png" height="67px" width="320px" alt="Oregon Tech Logo" id = "logo">
 			<span id = "title">OIT CSET Major Selection Game</span>
 		</div>
 		<div id= "text">

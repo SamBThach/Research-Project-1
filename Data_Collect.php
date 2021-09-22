@@ -8,7 +8,7 @@
 	if(!$connection)
 	{
 			echo "No connection";
-			header("Location: Data_Collect_Error.html");
+			header("Location: data_collect_error.html");
 			exit();
 	}
 	else
@@ -45,17 +45,17 @@
 			{
 				echo 'Values Not Collected';
 				echo date('Y-m-d H:i:s');
-				header("Location: Data_Collect_Error.html");
+				header("Location: data_collect_error.html");
 				exit();
 			}
 			else
 			{
-				header("Location: Submitted_page.php");
+				header("Location: submitted_page.php");
 				exit();
 			}
 		}
 		else{
-			header("Location: Errored_Research_Page.php");
+			header("Location: errored_research_page.html");
 		}										
 
 	}														
