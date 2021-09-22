@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<title>Consent Form </title>
+		<link rel="stylesheet" type="text/css" href="Consent Form.css">
+	</head>
+	<body>
+		<div id = "Heading">
+			<img src="OIT logo.png" height="67px" width="320px" alt="Oregon Tech Logo" id = "logo">
+			<span id = "title">Consent Form</span>
+		</div>
+		<div id= "Disclaimer">
+			<br> The following is a consent form for a web-based matching game to research prospective students' understanding of computing programs.
+			<br> The goals of this research are to help students understand the differences among computing programs at Oregon Tech and to help Oregon Tech understand how students perceive computing related programs.
+			<br> The expected duration is 10 minutes, and the data collection for this study will run for 15 months until September 2022.
+			<br> The web-based matching game consists of six images that will be matched to six phrases.
+			<br> There are minimal risks to participants such as eye-strain from monitor use. Breaks are allowed.
+			<br> Participation is voluntary. The web-matching game will not affect admission chances.
+			<br> You may learn more about the difference among the computing majors at Oregon Tech.
+			<br> You can also learn more about the majors by perusing the Oregon Tech website at: <a href= http://oit.edu> http://oit.edu</a>
+			<br> The answers that participants submit will be collected and stored in a database and used for research.
+				Data stored will be held anonymously and will not hold any personally identifiable data that can be traced back to participants.
+				This is an anonymous study. Personally identifiable information will not be collected, so your name, ip address, location, or other identifying information will not be collected or stored.
+			<br> Data will be used in the following ways:</p>
+			<ul>
+				<li>Analyzed and published in a research paper</li>
+			</ul>
+			If you have any questions, you can contact Sam Thach at sam.thach@oit.edu or Cecily Heiner at cecily.heiner@oit.edu.
+			
+			<br> By clicking submit, you allow researchers to use your data as explained above.</p>
+			<input type="submit" id="submit" value="Submit" onclick="getConsent()">
+			<p id = error></p>
+			<p id ="contact">For questions contact: sam.thach@oit.edu or cecily.heiner@oit.edu</p>
+		</div>
+		<script>
+		function getConsent(){
+			window.location.href =("research_website.html")
+		}
+		</script>
+	</body>
+</html>
+
