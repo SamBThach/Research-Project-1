@@ -67,6 +67,10 @@ body{
 	color: red;
 	text-align: center;
 }
+}
+img:hover {
+	transform: scale(2);
+}
 #button{
 	font-size: 20px;
 	width: 80px;
